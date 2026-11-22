@@ -1,0 +1,46 @@
+name: Build watch face
+on:
+  pull_request:
+  push:
+    branches: [main, 'stack/**']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: watch-face-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+        with:
+          packages: platform-tools
+          log-accepted-android-sdk-licenses: false
+      - name: Install SDK and validation dependencies
+        run: |
+          sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+          python -m pip install -r requirements-dev.txt
+      - name: Validate source and behaviour
+        run: |
+          python scripts/validate_face.py
+          python -m unittest discover -s tests -v
+      - name: Build and verify signed preview APK
+        run: python scripts/build_apk.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: clawd-preview-${{ github.sha }}
+          path: |
+            dist/clawd-preview.apk
+            dist/clawd-preview.apk.sha256
+          if-no-files-found: error
+          retention-days: 30

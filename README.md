@@ -30,3 +30,17 @@ The tests check declarative state selection and assets. They do not replace test
 ## Attribution
 
 This is a community project, not affiliated with or endorsed by Anthropic. Claude/Clawd-inspired imagery is fan artwork. Share Tech Mono and DejaVu font notices are in `LICENSES/`; neither is an official Anthropic font. The vendored WFF schema is provided under its accompanying Apache 2.0 license.
+
+## Charging scene
+
+![Charging preview](docs/charging-preview.png)
+
+While charging, coffee becomes a five-cell battery pack. A cable connects it to the resting mascot, with an awake-only travelling spark and sleepy blinks. A lower twenty-segment recharge bar and percentage show the actual battery level. Eight charging phrases rotate every five seconds.
+
+Milestone phrases recur briefly in the 50–54% and 90–94% ranges; at 100%, a green check and “Fully charged. Still pondering.” replace the ordinary status. These are declarative battery-level states, not one-time milestone notifications. Unplugging restores coffee, normal status words, and dancing. Ambient mode pauses the charging motion. Samsung's charging overlay may temporarily cover the face; verify on your device.
+
+## Build and install
+
+GitHub Actions validates the source, runs tests, builds a signed **Clawd Preview** APK, and uploads it with a SHA-256 checksum. See [build and installation instructions](docs/INSTALL.md) for phone installation, local builds, and signing continuity.
+
+Preview builds use a separate package so they do not overwrite your personal Clawd Charged installation. Keys, APKs, local build outputs, and credentials are excluded from Git. Physical-watch testing is still required.

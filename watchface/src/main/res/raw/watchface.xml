@@ -12,564 +12,592 @@
         </Font>
       </Text>
     </PartText>
-    <PartImage x="324" y="177" width="48" height="58">
-      <Image resource="coffee" />
-    </PartImage>
-    <Group name="clawd_active" x="0" y="0" width="450" height="450">
-      <Variant mode="AMBIENT" target="alpha" value="0" />
-      <Condition>
-        <Expressions>
-          <Expression name="pose0">[SECOND] % 20 == 0</Expression>
-          <Expression name="pose1">[SECOND] % 20 == 1</Expression>
-          <Expression name="pose2">[SECOND] % 20 == 2</Expression>
-          <Expression name="pose3">[SECOND] % 20 == 3</Expression>
-          <Expression name="pose4">[SECOND] % 20 == 4</Expression>
-          <Expression name="pose5">[SECOND] % 20 == 5</Expression>
-          <Expression name="pose6">[SECOND] % 20 == 6</Expression>
-          <Expression name="pose7">[SECOND] % 20 == 7</Expression>
-          <Expression name="pose8">[SECOND] % 20 == 8</Expression>
-          <Expression name="pose9">[SECOND] % 20 == 9</Expression>
-          <Expression name="pose10">[SECOND] % 20 == 10</Expression>
-          <Expression name="pose11">[SECOND] % 20 == 11</Expression>
-          <Expression name="pose12">[SECOND] % 20 == 12</Expression>
-          <Expression name="pose13">[SECOND] % 20 == 13</Expression>
-          <Expression name="pose14">[SECOND] % 20 == 14</Expression>
-          <Expression name="pose15">[SECOND] % 20 == 15</Expression>
-          <Expression name="pose16">[SECOND] % 20 == 16</Expression>
-          <Expression name="pose17">[SECOND] % 20 == 17</Expression>
-          <Expression name="pose18">[SECOND] % 20 == 18</Expression>
-          <Expression name="pose19">[SECOND] % 20 == 19</Expression>
-        </Expressions>
-        <Compare expression="pose0">
+    <Condition>
+      <Expressions>
+        <Expression name="unplugged_2">! [BATTERY_CHARGING_STATUS]</Expression>
+      </Expressions>
+      <Compare expression="unplugged_2">
+        <PartImage x="324" y="177" width="48" height="58">
+          <Image resource="coffee" />
+        </PartImage>
+      </Compare>
+    </Condition>
+    <Condition>
+      <Expressions>
+        <Expression name="unplugged_3">! [BATTERY_CHARGING_STATUS]</Expression>
+      </Expressions>
+      <Compare expression="unplugged_3">
+        <Group name="clawd_active" x="0" y="0" width="450" height="450">
+          <Variant mode="AMBIENT" target="alpha" value="0" />
+          <Condition>
+            <Expressions>
+              <Expression name="pose0">[SECOND] % 20 == 0</Expression>
+              <Expression name="pose1">[SECOND] % 20 == 1</Expression>
+              <Expression name="pose2">[SECOND] % 20 == 2</Expression>
+              <Expression name="pose3">[SECOND] % 20 == 3</Expression>
+              <Expression name="pose4">[SECOND] % 20 == 4</Expression>
+              <Expression name="pose5">[SECOND] % 20 == 5</Expression>
+              <Expression name="pose6">[SECOND] % 20 == 6</Expression>
+              <Expression name="pose7">[SECOND] % 20 == 7</Expression>
+              <Expression name="pose8">[SECOND] % 20 == 8</Expression>
+              <Expression name="pose9">[SECOND] % 20 == 9</Expression>
+              <Expression name="pose10">[SECOND] % 20 == 10</Expression>
+              <Expression name="pose11">[SECOND] % 20 == 11</Expression>
+              <Expression name="pose12">[SECOND] % 20 == 12</Expression>
+              <Expression name="pose13">[SECOND] % 20 == 13</Expression>
+              <Expression name="pose14">[SECOND] % 20 == 14</Expression>
+              <Expression name="pose15">[SECOND] % 20 == 15</Expression>
+              <Expression name="pose16">[SECOND] % 20 == 16</Expression>
+              <Expression name="pose17">[SECOND] % 20 == 17</Expression>
+              <Expression name="pose18">[SECOND] % 20 == 18</Expression>
+              <Expression name="pose19">[SECOND] % 20 == 19</Expression>
+            </Expressions>
+            <Compare expression="pose0">
+              <PartImage x="125" y="119" width="200" height="124">
+                <Image resource="pose_0" />
+              </PartImage>
+            </Compare>
+            <Compare expression="pose1">
+              <PartImage x="125" y="119" width="200" height="124">
+                <Image resource="pose_1" />
+              </PartImage>
+            </Compare>
+            <Compare expression="pose2">
+              <PartImage x="125" y="119" width="200" height="124">
+                <Image resource="pose_2" />
+              </PartImage>
+            </Compare>
+            <Compare expression="pose3">
+              <PartImage x="125" y="119" width="200" height="124">
+                <Image resource="pose_3" />
+              </PartImage>
+            </Compare>
+            <Compare expression="pose4">
+              <PartImage x="125" y="119" width="200" height="124">
+                <Image resource="pose_4" />
+              </PartImage>
+            </Compare>
+            <Compare expression="pose5">
+              <PartImage x="125" y="119" width="200" height="124">
+                <Image resource="pose_5" />
+              </PartImage>
+            </Compare>
+            <Compare expression="pose6">
+              <PartImage x="125" y="119" width="200" height="124">
+                <Image resource="pose_6" />
+              </PartImage>
+            </Compare>
+            <Compare expression="pose7">
+              <PartImage x="125" y="119" width="200" height="124">
+                <Image resource="pose_7" />
+              </PartImage>
+            </Compare>
+            <Compare expression="pose8">
+              <PartImage x="125" y="119" width="200" height="124">
+                <Image resource="pose_8" />
+              </PartImage>
+            </Compare>
+            <Compare expression="pose9">
+              <PartImage x="125" y="119" width="200" height="124">
+                <Image resource="pose_9" />
+              </PartImage>
+            </Compare>
+            <Compare expression="pose10">
+              <PartImage x="125" y="119" width="200" height="124">
+                <Image resource="pose_10" />
+              </PartImage>
+            </Compare>
+            <Compare expression="pose11">
+              <PartImage x="125" y="119" width="200" height="124">
+                <Image resource="pose_11" />
+              </PartImage>
+            </Compare>
+            <Compare expression="pose12">
+              <PartImage x="125" y="119" width="200" height="124">
+                <Image resource="pose_12" />
+              </PartImage>
+            </Compare>
+            <Compare expression="pose13">
+              <PartImage x="125" y="119" width="200" height="124">
+                <Image resource="pose_13" />
+              </PartImage>
+            </Compare>
+            <Compare expression="pose14">
+              <PartImage x="125" y="119" width="200" height="124">
+                <Image resource="pose_14" />
+              </PartImage>
+            </Compare>
+            <Compare expression="pose15">
+              <PartImage x="125" y="119" width="200" height="124">
+                <Image resource="pose_15" />
+              </PartImage>
+            </Compare>
+            <Compare expression="pose16">
+              <PartImage x="125" y="119" width="200" height="124">
+                <Image resource="pose_16" />
+              </PartImage>
+            </Compare>
+            <Compare expression="pose17">
+              <PartImage x="125" y="119" width="200" height="124">
+                <Image resource="pose_17" />
+              </PartImage>
+            </Compare>
+            <Compare expression="pose18">
+              <PartImage x="125" y="119" width="200" height="124">
+                <Image resource="pose_18" />
+              </PartImage>
+            </Compare>
+            <Compare expression="pose19">
+              <PartImage x="125" y="119" width="200" height="124">
+                <Image resource="pose_19" />
+              </PartImage>
+            </Compare>
+          </Condition>
+        </Group>
+      </Compare>
+    </Condition>
+    <Condition>
+      <Expressions>
+        <Expression name="unplugged_4">! [BATTERY_CHARGING_STATUS]</Expression>
+      </Expressions>
+      <Compare expression="unplugged_4">
+        <Group name="clawd_ambient" x="0" y="0" width="450" height="450" alpha="0">
+          <Variant mode="AMBIENT" target="alpha" value="255" />
           <PartImage x="125" y="119" width="200" height="124">
             <Image resource="pose_0" />
           </PartImage>
-        </Compare>
-        <Compare expression="pose1">
-          <PartImage x="125" y="119" width="200" height="124">
-            <Image resource="pose_1" />
-          </PartImage>
-        </Compare>
-        <Compare expression="pose2">
-          <PartImage x="125" y="119" width="200" height="124">
-            <Image resource="pose_2" />
-          </PartImage>
-        </Compare>
-        <Compare expression="pose3">
-          <PartImage x="125" y="119" width="200" height="124">
-            <Image resource="pose_3" />
-          </PartImage>
-        </Compare>
-        <Compare expression="pose4">
-          <PartImage x="125" y="119" width="200" height="124">
-            <Image resource="pose_4" />
-          </PartImage>
-        </Compare>
-        <Compare expression="pose5">
-          <PartImage x="125" y="119" width="200" height="124">
-            <Image resource="pose_5" />
-          </PartImage>
-        </Compare>
-        <Compare expression="pose6">
-          <PartImage x="125" y="119" width="200" height="124">
-            <Image resource="pose_6" />
-          </PartImage>
-        </Compare>
-        <Compare expression="pose7">
-          <PartImage x="125" y="119" width="200" height="124">
-            <Image resource="pose_7" />
-          </PartImage>
-        </Compare>
-        <Compare expression="pose8">
-          <PartImage x="125" y="119" width="200" height="124">
-            <Image resource="pose_8" />
-          </PartImage>
-        </Compare>
-        <Compare expression="pose9">
-          <PartImage x="125" y="119" width="200" height="124">
-            <Image resource="pose_9" />
-          </PartImage>
-        </Compare>
-        <Compare expression="pose10">
-          <PartImage x="125" y="119" width="200" height="124">
-            <Image resource="pose_10" />
-          </PartImage>
-        </Compare>
-        <Compare expression="pose11">
-          <PartImage x="125" y="119" width="200" height="124">
-            <Image resource="pose_11" />
-          </PartImage>
-        </Compare>
-        <Compare expression="pose12">
-          <PartImage x="125" y="119" width="200" height="124">
-            <Image resource="pose_12" />
-          </PartImage>
-        </Compare>
-        <Compare expression="pose13">
-          <PartImage x="125" y="119" width="200" height="124">
-            <Image resource="pose_13" />
-          </PartImage>
-        </Compare>
-        <Compare expression="pose14">
-          <PartImage x="125" y="119" width="200" height="124">
-            <Image resource="pose_14" />
-          </PartImage>
-        </Compare>
-        <Compare expression="pose15">
-          <PartImage x="125" y="119" width="200" height="124">
-            <Image resource="pose_15" />
-          </PartImage>
-        </Compare>
-        <Compare expression="pose16">
-          <PartImage x="125" y="119" width="200" height="124">
-            <Image resource="pose_16" />
-          </PartImage>
-        </Compare>
-        <Compare expression="pose17">
-          <PartImage x="125" y="119" width="200" height="124">
-            <Image resource="pose_17" />
-          </PartImage>
-        </Compare>
-        <Compare expression="pose18">
-          <PartImage x="125" y="119" width="200" height="124">
-            <Image resource="pose_18" />
-          </PartImage>
-        </Compare>
-        <Compare expression="pose19">
-          <PartImage x="125" y="119" width="200" height="124">
-            <Image resource="pose_19" />
-          </PartImage>
-        </Compare>
-      </Condition>
-    </Group>
-    <Group name="clawd_ambient" x="0" y="0" width="450" height="450" alpha="0">
-      <Variant mode="AMBIENT" target="alpha" value="255" />
-      <PartImage x="125" y="119" width="200" height="124">
-        <Image resource="pose_0" />
-      </PartImage>
-    </Group>
+        </Group>
+      </Compare>
+    </Condition>
     <Condition>
       <Expressions>
-        <Expression name="v0">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 0 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 5</Expression>
-        <Expression name="v1">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 5 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 10</Expression>
-        <Expression name="v2">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 10 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 15</Expression>
-        <Expression name="v3">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 15 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 20</Expression>
-        <Expression name="v4">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 20 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 25</Expression>
-        <Expression name="v5">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 25 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 30</Expression>
-        <Expression name="v6">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 30 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 35</Expression>
-        <Expression name="v7">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 35 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 40</Expression>
-        <Expression name="v8">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 40 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 45</Expression>
-        <Expression name="v9">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 45 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 50</Expression>
-        <Expression name="v10">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 50 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 55</Expression>
-        <Expression name="v11">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 55 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 60</Expression>
-        <Expression name="v12">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 60 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 65</Expression>
-        <Expression name="v13">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 65 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 70</Expression>
-        <Expression name="v14">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 70 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 75</Expression>
-        <Expression name="v15">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 75 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 80</Expression>
-        <Expression name="v16">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 80 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 85</Expression>
-        <Expression name="v17">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 85 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 90</Expression>
-        <Expression name="v18">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 90 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 95</Expression>
-        <Expression name="v19">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 95 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 100</Expression>
+        <Expression name="unplugged_5">! [BATTERY_CHARGING_STATUS]</Expression>
       </Expressions>
-      <Compare expression="v0">
-        <PartText x="195" y="244" width="97" height="34">
-          <Text align="CENTER">
-            <Font family="terminal_mono" size="22" color="#D97757">Musing…</Font>
-          </Text>
-        </PartText>
-        <Group name="bounce0" x="0" y="0" width="450" height="450">
-          <Variant mode="AMBIENT" target="alpha" value="0" />
-          <PartImage x="161" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-            <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
-          </PartImage>
-        </Group>
-        <Group name="rest0" x="0" y="0" width="450" height="450" alpha="0">
-          <Variant mode="AMBIENT" target="alpha" value="255" />
-          <PartImage x="161" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-          </PartImage>
-        </Group>
-      </Compare>
-      <Compare expression="v1">
-        <PartText x="175" y="244" width="137" height="34">
-          <Text align="CENTER">
-            <Font family="terminal_mono" size="22" color="#D97757">Drizzling…</Font>
-          </Text>
-        </PartText>
-        <Group name="bounce1" x="0" y="0" width="450" height="450">
-          <Variant mode="AMBIENT" target="alpha" value="0" />
-          <PartImage x="141" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-            <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
-          </PartImage>
-        </Group>
-        <Group name="rest1" x="0" y="0" width="450" height="450" alpha="0">
-          <Variant mode="AMBIENT" target="alpha" value="255" />
-          <PartImage x="141" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-          </PartImage>
-        </Group>
-      </Compare>
-      <Compare expression="v2">
-        <PartText x="175" y="244" width="137" height="34">
-          <Text align="CENTER">
-            <Font family="terminal_mono" size="22" color="#D97757">Wandering…</Font>
-          </Text>
-        </PartText>
-        <Group name="bounce2" x="0" y="0" width="450" height="450">
-          <Variant mode="AMBIENT" target="alpha" value="0" />
-          <PartImage x="141" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-            <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
-          </PartImage>
-        </Group>
-        <Group name="rest2" x="0" y="0" width="450" height="450" alpha="0">
-          <Variant mode="AMBIENT" target="alpha" value="255" />
-          <PartImage x="141" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-          </PartImage>
-        </Group>
-      </Compare>
-      <Compare expression="v3">
-        <PartText x="175" y="244" width="137" height="34">
-          <Text align="CENTER">
-            <Font family="terminal_mono" size="22" color="#D97757">Pondering…</Font>
-          </Text>
-        </PartText>
-        <Group name="bounce3" x="0" y="0" width="450" height="450">
-          <Variant mode="AMBIENT" target="alpha" value="0" />
-          <PartImage x="141" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-            <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
-          </PartImage>
-        </Group>
-        <Group name="rest3" x="0" y="0" width="450" height="450" alpha="0">
-          <Variant mode="AMBIENT" target="alpha" value="255" />
-          <PartImage x="141" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-          </PartImage>
-        </Group>
-      </Compare>
-      <Compare expression="v4">
-        <PartText x="162" y="244" width="163" height="34">
-          <Text align="CENTER">
-            <Font family="terminal_mono" size="22" color="#D97757">Percolating…</Font>
-          </Text>
-        </PartText>
-        <Group name="bounce4" x="0" y="0" width="450" height="450">
-          <Variant mode="AMBIENT" target="alpha" value="0" />
-          <PartImage x="128" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-            <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
-          </PartImage>
-        </Group>
-        <Group name="rest4" x="0" y="0" width="450" height="450" alpha="0">
-          <Variant mode="AMBIENT" target="alpha" value="255" />
-          <PartImage x="128" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-          </PartImage>
-        </Group>
-      </Compare>
-      <Compare expression="v5">
-        <PartText x="182" y="244" width="124" height="34">
-          <Text align="CENTER">
-            <Font family="terminal_mono" size="22" color="#D97757">Noodling…</Font>
-          </Text>
-        </PartText>
-        <Group name="bounce5" x="0" y="0" width="450" height="450">
-          <Variant mode="AMBIENT" target="alpha" value="0" />
-          <PartImage x="148" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-            <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
-          </PartImage>
-        </Group>
-        <Group name="rest5" x="0" y="0" width="450" height="450" alpha="0">
-          <Variant mode="AMBIENT" target="alpha" value="255" />
-          <PartImage x="148" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-          </PartImage>
-        </Group>
-      </Compare>
-      <Compare expression="v6">
-        <PartText x="169" y="244" width="150" height="34">
-          <Text align="CENTER">
-            <Font family="terminal_mono" size="22" color="#D97757">Meandering…</Font>
-          </Text>
-        </PartText>
-        <Group name="bounce6" x="0" y="0" width="450" height="450">
-          <Variant mode="AMBIENT" target="alpha" value="0" />
-          <PartImage x="135" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-            <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
-          </PartImage>
-        </Group>
-        <Group name="rest6" x="0" y="0" width="450" height="450" alpha="0">
-          <Variant mode="AMBIENT" target="alpha" value="255" />
-          <PartImage x="135" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-          </PartImage>
-        </Group>
-      </Compare>
-      <Compare expression="v7">
-        <PartText x="175" y="244" width="137" height="34">
-          <Text align="CENTER">
-            <Font family="terminal_mono" size="22" color="#D97757">Simmering…</Font>
-          </Text>
-        </PartText>
-        <Group name="bounce7" x="0" y="0" width="450" height="450">
-          <Variant mode="AMBIENT" target="alpha" value="0" />
-          <PartImage x="141" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-            <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
-          </PartImage>
-        </Group>
-        <Group name="rest7" x="0" y="0" width="450" height="450" alpha="0">
-          <Variant mode="AMBIENT" target="alpha" value="255" />
-          <PartImage x="141" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-          </PartImage>
-        </Group>
-      </Compare>
-      <Compare expression="v8">
-        <PartText x="169" y="244" width="150" height="34">
-          <Text align="CENTER">
-            <Font family="terminal_mono" size="22" color="#D97757">Untangling…</Font>
-          </Text>
-        </PartText>
-        <Group name="bounce8" x="0" y="0" width="450" height="450">
-          <Variant mode="AMBIENT" target="alpha" value="0" />
-          <PartImage x="135" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-            <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
-          </PartImage>
-        </Group>
-        <Group name="rest8" x="0" y="0" width="450" height="450" alpha="0">
-          <Variant mode="AMBIENT" target="alpha" value="255" />
-          <PartImage x="135" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-          </PartImage>
-        </Group>
-      </Compare>
-      <Compare expression="v9">
-        <PartText x="175" y="244" width="137" height="34">
-          <Text align="CENTER">
-            <Font family="terminal_mono" size="22" color="#D97757">Conjuring…</Font>
-          </Text>
-        </PartText>
-        <Group name="bounce9" x="0" y="0" width="450" height="450">
-          <Variant mode="AMBIENT" target="alpha" value="0" />
-          <PartImage x="141" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-            <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
-          </PartImage>
-        </Group>
-        <Group name="rest9" x="0" y="0" width="450" height="450" alpha="0">
-          <Variant mode="AMBIENT" target="alpha" value="255" />
-          <PartImage x="141" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-          </PartImage>
-        </Group>
-      </Compare>
-      <Compare expression="v10">
-        <PartText x="162" y="244" width="163" height="34">
-          <Text align="CENTER">
-            <Font family="terminal_mono" size="22" color="#D97757">Moonwalking…</Font>
-          </Text>
-        </PartText>
-        <Group name="bounce10" x="0" y="0" width="450" height="450">
-          <Variant mode="AMBIENT" target="alpha" value="0" />
-          <PartImage x="128" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-            <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
-          </PartImage>
-        </Group>
-        <Group name="rest10" x="0" y="0" width="450" height="450" alpha="0">
-          <Variant mode="AMBIENT" target="alpha" value="255" />
-          <PartImage x="128" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-          </PartImage>
-        </Group>
-      </Compare>
-      <Compare expression="v11">
-        <PartText x="169" y="244" width="150" height="34">
-          <Text align="CENTER">
-            <Font family="terminal_mono" size="22" color="#D97757">Ruminating…</Font>
-          </Text>
-        </PartText>
-        <Group name="bounce11" x="0" y="0" width="450" height="450">
-          <Variant mode="AMBIENT" target="alpha" value="0" />
-          <PartImage x="135" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-            <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
-          </PartImage>
-        </Group>
-        <Group name="rest11" x="0" y="0" width="450" height="450" alpha="0">
-          <Variant mode="AMBIENT" target="alpha" value="255" />
-          <PartImage x="135" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-          </PartImage>
-        </Group>
-      </Compare>
-      <Compare expression="v12">
-        <PartText x="189" y="244" width="110" height="34">
-          <Text align="CENTER">
-            <Font family="terminal_mono" size="22" color="#D97757">Brewing…</Font>
-          </Text>
-        </PartText>
-        <Group name="bounce12" x="0" y="0" width="450" height="450">
-          <Variant mode="AMBIENT" target="alpha" value="0" />
-          <PartImage x="155" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-            <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
-          </PartImage>
-        </Group>
-        <Group name="rest12" x="0" y="0" width="450" height="450" alpha="0">
-          <Variant mode="AMBIENT" target="alpha" value="255" />
-          <PartImage x="155" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-          </PartImage>
-        </Group>
-      </Compare>
-      <Compare expression="v13">
-        <PartText x="182" y="244" width="124" height="34">
-          <Text align="CENTER">
-            <Font family="terminal_mono" size="22" color="#D97757">Doodling…</Font>
-          </Text>
-        </PartText>
-        <Group name="bounce13" x="0" y="0" width="450" height="450">
-          <Variant mode="AMBIENT" target="alpha" value="0" />
-          <PartImage x="148" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-            <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
-          </PartImage>
-        </Group>
-        <Group name="rest13" x="0" y="0" width="450" height="450" alpha="0">
-          <Variant mode="AMBIENT" target="alpha" value="255" />
-          <PartImage x="148" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-          </PartImage>
-        </Group>
-      </Compare>
-      <Compare expression="v14">
-        <PartText x="182" y="244" width="124" height="34">
-          <Text align="CENTER">
-            <Font family="terminal_mono" size="22" color="#D97757">Whirring…</Font>
-          </Text>
-        </PartText>
-        <Group name="bounce14" x="0" y="0" width="450" height="450">
-          <Variant mode="AMBIENT" target="alpha" value="0" />
-          <PartImage x="148" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-            <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
-          </PartImage>
-        </Group>
-        <Group name="rest14" x="0" y="0" width="450" height="450" alpha="0">
-          <Variant mode="AMBIENT" target="alpha" value="255" />
-          <PartImage x="148" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-          </PartImage>
-        </Group>
-      </Compare>
-      <Compare expression="v15">
-        <PartText x="149" y="244" width="190" height="34">
-          <Text align="CENTER">
-            <Font family="terminal_mono" size="22" color="#D97757">Contemplating…</Font>
-          </Text>
-        </PartText>
-        <Group name="bounce15" x="0" y="0" width="450" height="450">
-          <Variant mode="AMBIENT" target="alpha" value="0" />
-          <PartImage x="115" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-            <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
-          </PartImage>
-        </Group>
-        <Group name="rest15" x="0" y="0" width="450" height="450" alpha="0">
-          <Variant mode="AMBIENT" target="alpha" value="255" />
-          <PartImage x="115" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-          </PartImage>
-        </Group>
-      </Compare>
-      <Compare expression="v16">
-        <PartText x="162" y="244" width="163" height="34">
-          <Text align="CENTER">
-            <Font family="terminal_mono" size="22" color="#D97757">Germinating…</Font>
-          </Text>
-        </PartText>
-        <Group name="bounce16" x="0" y="0" width="450" height="450">
-          <Variant mode="AMBIENT" target="alpha" value="0" />
-          <PartImage x="128" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-            <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
-          </PartImage>
-        </Group>
-        <Group name="rest16" x="0" y="0" width="450" height="450" alpha="0">
-          <Variant mode="AMBIENT" target="alpha" value="255" />
-          <PartImage x="128" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-          </PartImage>
-        </Group>
-      </Compare>
-      <Compare expression="v17">
-        <PartText x="162" y="244" width="163" height="34">
-          <Text align="CENTER">
-            <Font family="terminal_mono" size="22" color="#D97757">Bamboozling…</Font>
-          </Text>
-        </PartText>
-        <Group name="bounce17" x="0" y="0" width="450" height="450">
-          <Variant mode="AMBIENT" target="alpha" value="0" />
-          <PartImage x="128" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-            <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
-          </PartImage>
-        </Group>
-        <Group name="rest17" x="0" y="0" width="450" height="450" alpha="0">
-          <Variant mode="AMBIENT" target="alpha" value="255" />
-          <PartImage x="128" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-          </PartImage>
-        </Group>
-      </Compare>
-      <Compare expression="v18">
-        <PartText x="169" y="244" width="150" height="34">
-          <Text align="CENTER">
-            <Font family="terminal_mono" size="22" color="#D97757">Marinating…</Font>
-          </Text>
-        </PartText>
-        <Group name="bounce18" x="0" y="0" width="450" height="450">
-          <Variant mode="AMBIENT" target="alpha" value="0" />
-          <PartImage x="135" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-            <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
-          </PartImage>
-        </Group>
-        <Group name="rest18" x="0" y="0" width="450" height="450" alpha="0">
-          <Variant mode="AMBIENT" target="alpha" value="255" />
-          <PartImage x="135" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-          </PartImage>
-        </Group>
-      </Compare>
-      <Compare expression="v19">
-        <PartText x="169" y="244" width="150" height="34">
-          <Text align="CENTER">
-            <Font family="terminal_mono" size="22" color="#D97757">Schlepping…</Font>
-          </Text>
-        </PartText>
-        <Group name="bounce19" x="0" y="0" width="450" height="450">
-          <Variant mode="AMBIENT" target="alpha" value="0" />
-          <PartImage x="135" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-            <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
-          </PartImage>
-        </Group>
-        <Group name="rest19" x="0" y="0" width="450" height="450" alpha="0">
-          <Variant mode="AMBIENT" target="alpha" value="255" />
-          <PartImage x="135" y="250" width="24" height="24">
-            <Image resource="claude_star" />
-          </PartImage>
-        </Group>
+      <Compare expression="unplugged_5">
+        <Condition>
+          <Expressions>
+            <Expression name="v0">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 0 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 5</Expression>
+            <Expression name="v1">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 5 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 10</Expression>
+            <Expression name="v2">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 10 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 15</Expression>
+            <Expression name="v3">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 15 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 20</Expression>
+            <Expression name="v4">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 20 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 25</Expression>
+            <Expression name="v5">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 25 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 30</Expression>
+            <Expression name="v6">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 30 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 35</Expression>
+            <Expression name="v7">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 35 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 40</Expression>
+            <Expression name="v8">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 40 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 45</Expression>
+            <Expression name="v9">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 45 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 50</Expression>
+            <Expression name="v10">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 50 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 55</Expression>
+            <Expression name="v11">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 55 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 60</Expression>
+            <Expression name="v12">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 60 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 65</Expression>
+            <Expression name="v13">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 65 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 70</Expression>
+            <Expression name="v14">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 70 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 75</Expression>
+            <Expression name="v15">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 75 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 80</Expression>
+            <Expression name="v16">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 80 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 85</Expression>
+            <Expression name="v17">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 85 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 90</Expression>
+            <Expression name="v18">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 90 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 95</Expression>
+            <Expression name="v19">(([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &gt;= 95 &amp;&amp; (([HOUR_0_23] * 3600 + [MINUTE] * 60 + [SECOND]) % 100) &lt; 100</Expression>
+          </Expressions>
+          <Compare expression="v0">
+            <PartText x="195" y="244" width="97" height="34">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="22" color="#D97757">Musing…</Font>
+              </Text>
+            </PartText>
+            <Group name="bounce0" x="0" y="0" width="450" height="450">
+              <Variant mode="AMBIENT" target="alpha" value="0" />
+              <PartImage x="161" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+                <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
+              </PartImage>
+            </Group>
+            <Group name="rest0" x="0" y="0" width="450" height="450" alpha="0">
+              <Variant mode="AMBIENT" target="alpha" value="255" />
+              <PartImage x="161" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+              </PartImage>
+            </Group>
+          </Compare>
+          <Compare expression="v1">
+            <PartText x="175" y="244" width="137" height="34">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="22" color="#D97757">Drizzling…</Font>
+              </Text>
+            </PartText>
+            <Group name="bounce1" x="0" y="0" width="450" height="450">
+              <Variant mode="AMBIENT" target="alpha" value="0" />
+              <PartImage x="141" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+                <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
+              </PartImage>
+            </Group>
+            <Group name="rest1" x="0" y="0" width="450" height="450" alpha="0">
+              <Variant mode="AMBIENT" target="alpha" value="255" />
+              <PartImage x="141" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+              </PartImage>
+            </Group>
+          </Compare>
+          <Compare expression="v2">
+            <PartText x="175" y="244" width="137" height="34">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="22" color="#D97757">Wandering…</Font>
+              </Text>
+            </PartText>
+            <Group name="bounce2" x="0" y="0" width="450" height="450">
+              <Variant mode="AMBIENT" target="alpha" value="0" />
+              <PartImage x="141" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+                <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
+              </PartImage>
+            </Group>
+            <Group name="rest2" x="0" y="0" width="450" height="450" alpha="0">
+              <Variant mode="AMBIENT" target="alpha" value="255" />
+              <PartImage x="141" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+              </PartImage>
+            </Group>
+          </Compare>
+          <Compare expression="v3">
+            <PartText x="175" y="244" width="137" height="34">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="22" color="#D97757">Pondering…</Font>
+              </Text>
+            </PartText>
+            <Group name="bounce3" x="0" y="0" width="450" height="450">
+              <Variant mode="AMBIENT" target="alpha" value="0" />
+              <PartImage x="141" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+                <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
+              </PartImage>
+            </Group>
+            <Group name="rest3" x="0" y="0" width="450" height="450" alpha="0">
+              <Variant mode="AMBIENT" target="alpha" value="255" />
+              <PartImage x="141" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+              </PartImage>
+            </Group>
+          </Compare>
+          <Compare expression="v4">
+            <PartText x="162" y="244" width="163" height="34">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="22" color="#D97757">Percolating…</Font>
+              </Text>
+            </PartText>
+            <Group name="bounce4" x="0" y="0" width="450" height="450">
+              <Variant mode="AMBIENT" target="alpha" value="0" />
+              <PartImage x="128" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+                <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
+              </PartImage>
+            </Group>
+            <Group name="rest4" x="0" y="0" width="450" height="450" alpha="0">
+              <Variant mode="AMBIENT" target="alpha" value="255" />
+              <PartImage x="128" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+              </PartImage>
+            </Group>
+          </Compare>
+          <Compare expression="v5">
+            <PartText x="182" y="244" width="124" height="34">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="22" color="#D97757">Noodling…</Font>
+              </Text>
+            </PartText>
+            <Group name="bounce5" x="0" y="0" width="450" height="450">
+              <Variant mode="AMBIENT" target="alpha" value="0" />
+              <PartImage x="148" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+                <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
+              </PartImage>
+            </Group>
+            <Group name="rest5" x="0" y="0" width="450" height="450" alpha="0">
+              <Variant mode="AMBIENT" target="alpha" value="255" />
+              <PartImage x="148" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+              </PartImage>
+            </Group>
+          </Compare>
+          <Compare expression="v6">
+            <PartText x="169" y="244" width="150" height="34">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="22" color="#D97757">Meandering…</Font>
+              </Text>
+            </PartText>
+            <Group name="bounce6" x="0" y="0" width="450" height="450">
+              <Variant mode="AMBIENT" target="alpha" value="0" />
+              <PartImage x="135" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+                <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
+              </PartImage>
+            </Group>
+            <Group name="rest6" x="0" y="0" width="450" height="450" alpha="0">
+              <Variant mode="AMBIENT" target="alpha" value="255" />
+              <PartImage x="135" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+              </PartImage>
+            </Group>
+          </Compare>
+          <Compare expression="v7">
+            <PartText x="175" y="244" width="137" height="34">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="22" color="#D97757">Simmering…</Font>
+              </Text>
+            </PartText>
+            <Group name="bounce7" x="0" y="0" width="450" height="450">
+              <Variant mode="AMBIENT" target="alpha" value="0" />
+              <PartImage x="141" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+                <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
+              </PartImage>
+            </Group>
+            <Group name="rest7" x="0" y="0" width="450" height="450" alpha="0">
+              <Variant mode="AMBIENT" target="alpha" value="255" />
+              <PartImage x="141" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+              </PartImage>
+            </Group>
+          </Compare>
+          <Compare expression="v8">
+            <PartText x="169" y="244" width="150" height="34">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="22" color="#D97757">Untangling…</Font>
+              </Text>
+            </PartText>
+            <Group name="bounce8" x="0" y="0" width="450" height="450">
+              <Variant mode="AMBIENT" target="alpha" value="0" />
+              <PartImage x="135" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+                <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
+              </PartImage>
+            </Group>
+            <Group name="rest8" x="0" y="0" width="450" height="450" alpha="0">
+              <Variant mode="AMBIENT" target="alpha" value="255" />
+              <PartImage x="135" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+              </PartImage>
+            </Group>
+          </Compare>
+          <Compare expression="v9">
+            <PartText x="175" y="244" width="137" height="34">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="22" color="#D97757">Conjuring…</Font>
+              </Text>
+            </PartText>
+            <Group name="bounce9" x="0" y="0" width="450" height="450">
+              <Variant mode="AMBIENT" target="alpha" value="0" />
+              <PartImage x="141" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+                <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
+              </PartImage>
+            </Group>
+            <Group name="rest9" x="0" y="0" width="450" height="450" alpha="0">
+              <Variant mode="AMBIENT" target="alpha" value="255" />
+              <PartImage x="141" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+              </PartImage>
+            </Group>
+          </Compare>
+          <Compare expression="v10">
+            <PartText x="162" y="244" width="163" height="34">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="22" color="#D97757">Moonwalking…</Font>
+              </Text>
+            </PartText>
+            <Group name="bounce10" x="0" y="0" width="450" height="450">
+              <Variant mode="AMBIENT" target="alpha" value="0" />
+              <PartImage x="128" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+                <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
+              </PartImage>
+            </Group>
+            <Group name="rest10" x="0" y="0" width="450" height="450" alpha="0">
+              <Variant mode="AMBIENT" target="alpha" value="255" />
+              <PartImage x="128" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+              </PartImage>
+            </Group>
+          </Compare>
+          <Compare expression="v11">
+            <PartText x="169" y="244" width="150" height="34">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="22" color="#D97757">Ruminating…</Font>
+              </Text>
+            </PartText>
+            <Group name="bounce11" x="0" y="0" width="450" height="450">
+              <Variant mode="AMBIENT" target="alpha" value="0" />
+              <PartImage x="135" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+                <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
+              </PartImage>
+            </Group>
+            <Group name="rest11" x="0" y="0" width="450" height="450" alpha="0">
+              <Variant mode="AMBIENT" target="alpha" value="255" />
+              <PartImage x="135" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+              </PartImage>
+            </Group>
+          </Compare>
+          <Compare expression="v12">
+            <PartText x="189" y="244" width="110" height="34">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="22" color="#D97757">Brewing…</Font>
+              </Text>
+            </PartText>
+            <Group name="bounce12" x="0" y="0" width="450" height="450">
+              <Variant mode="AMBIENT" target="alpha" value="0" />
+              <PartImage x="155" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+                <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
+              </PartImage>
+            </Group>
+            <Group name="rest12" x="0" y="0" width="450" height="450" alpha="0">
+              <Variant mode="AMBIENT" target="alpha" value="255" />
+              <PartImage x="155" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+              </PartImage>
+            </Group>
+          </Compare>
+          <Compare expression="v13">
+            <PartText x="182" y="244" width="124" height="34">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="22" color="#D97757">Doodling…</Font>
+              </Text>
+            </PartText>
+            <Group name="bounce13" x="0" y="0" width="450" height="450">
+              <Variant mode="AMBIENT" target="alpha" value="0" />
+              <PartImage x="148" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+                <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
+              </PartImage>
+            </Group>
+            <Group name="rest13" x="0" y="0" width="450" height="450" alpha="0">
+              <Variant mode="AMBIENT" target="alpha" value="255" />
+              <PartImage x="148" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+              </PartImage>
+            </Group>
+          </Compare>
+          <Compare expression="v14">
+            <PartText x="182" y="244" width="124" height="34">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="22" color="#D97757">Whirring…</Font>
+              </Text>
+            </PartText>
+            <Group name="bounce14" x="0" y="0" width="450" height="450">
+              <Variant mode="AMBIENT" target="alpha" value="0" />
+              <PartImage x="148" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+                <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
+              </PartImage>
+            </Group>
+            <Group name="rest14" x="0" y="0" width="450" height="450" alpha="0">
+              <Variant mode="AMBIENT" target="alpha" value="255" />
+              <PartImage x="148" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+              </PartImage>
+            </Group>
+          </Compare>
+          <Compare expression="v15">
+            <PartText x="149" y="244" width="190" height="34">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="22" color="#D97757">Contemplating…</Font>
+              </Text>
+            </PartText>
+            <Group name="bounce15" x="0" y="0" width="450" height="450">
+              <Variant mode="AMBIENT" target="alpha" value="0" />
+              <PartImage x="115" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+                <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
+              </PartImage>
+            </Group>
+            <Group name="rest15" x="0" y="0" width="450" height="450" alpha="0">
+              <Variant mode="AMBIENT" target="alpha" value="255" />
+              <PartImage x="115" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+              </PartImage>
+            </Group>
+          </Compare>
+          <Compare expression="v16">
+            <PartText x="162" y="244" width="163" height="34">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="22" color="#D97757">Germinating…</Font>
+              </Text>
+            </PartText>
+            <Group name="bounce16" x="0" y="0" width="450" height="450">
+              <Variant mode="AMBIENT" target="alpha" value="0" />
+              <PartImage x="128" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+                <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
+              </PartImage>
+            </Group>
+            <Group name="rest16" x="0" y="0" width="450" height="450" alpha="0">
+              <Variant mode="AMBIENT" target="alpha" value="255" />
+              <PartImage x="128" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+              </PartImage>
+            </Group>
+          </Compare>
+          <Compare expression="v17">
+            <PartText x="162" y="244" width="163" height="34">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="22" color="#D97757">Bamboozling…</Font>
+              </Text>
+            </PartText>
+            <Group name="bounce17" x="0" y="0" width="450" height="450">
+              <Variant mode="AMBIENT" target="alpha" value="0" />
+              <PartImage x="128" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+                <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
+              </PartImage>
+            </Group>
+            <Group name="rest17" x="0" y="0" width="450" height="450" alpha="0">
+              <Variant mode="AMBIENT" target="alpha" value="255" />
+              <PartImage x="128" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+              </PartImage>
+            </Group>
+          </Compare>
+          <Compare expression="v18">
+            <PartText x="169" y="244" width="150" height="34">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="22" color="#D97757">Marinating…</Font>
+              </Text>
+            </PartText>
+            <Group name="bounce18" x="0" y="0" width="450" height="450">
+              <Variant mode="AMBIENT" target="alpha" value="0" />
+              <PartImage x="135" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+                <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
+              </PartImage>
+            </Group>
+            <Group name="rest18" x="0" y="0" width="450" height="450" alpha="0">
+              <Variant mode="AMBIENT" target="alpha" value="255" />
+              <PartImage x="135" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+              </PartImage>
+            </Group>
+          </Compare>
+          <Compare expression="v19">
+            <PartText x="169" y="244" width="150" height="34">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="22" color="#D97757">Schlepping…</Font>
+              </Text>
+            </PartText>
+            <Group name="bounce19" x="0" y="0" width="450" height="450">
+              <Variant mode="AMBIENT" target="alpha" value="0" />
+              <PartImage x="135" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+                <Transform target="y" value="250 - ([SECOND] % 2) * 5" />
+              </PartImage>
+            </Group>
+            <Group name="rest19" x="0" y="0" width="450" height="450" alpha="0">
+              <Variant mode="AMBIENT" target="alpha" value="255" />
+              <PartImage x="135" y="250" width="24" height="24">
+                <Image resource="claude_star" />
+              </PartImage>
+            </Group>
+          </Compare>
+        </Condition>
       </Compare>
     </Condition>
     <DigitalClock x="25" y="290" width="400" height="100">
@@ -577,5 +605,664 @@
         <Font family="robotic" size="90" color="#F3EADE" />
       </TimeText>
     </DigitalClock>
+    <Condition>
+      <Expressions>
+        <Expression name="charging">[BATTERY_CHARGING_STATUS]</Expression>
+      </Expressions>
+      <Compare expression="charging">
+        <PartImage x="125" y="119" width="200" height="124">
+          <Image resource="pose_0" />
+        </PartImage>
+        <PartDraw x="305" y="180" width="18" height="5">
+          <Rectangle x="0" y="0" width="18" height="5">
+            <Fill color="#8E8176" />
+          </Rectangle>
+        </PartDraw>
+        <PartDraw x="319" y="180" width="5" height="29">
+          <Rectangle x="0" y="0" width="5" height="29">
+            <Fill color="#8E8176" />
+          </Rectangle>
+        </PartDraw>
+        <PartDraw x="319" y="205" width="18" height="5">
+          <Rectangle x="0" y="0" width="18" height="5">
+            <Fill color="#8E8176" />
+          </Rectangle>
+        </PartDraw>
+        <PartDraw x="333" y="196" width="5" height="14">
+          <Rectangle x="0" y="0" width="5" height="14">
+            <Fill color="#8E8176" />
+          </Rectangle>
+        </PartDraw>
+        <PartDraw x="298" y="173" width="16" height="18">
+          <Rectangle x="0" y="0" width="16" height="18">
+            <Fill color="#F3EADE" />
+          </Rectangle>
+        </PartDraw>
+        <PartDraw x="296" y="177" width="5" height="4">
+          <Rectangle x="0" y="0" width="5" height="4">
+            <Fill color="#D97757" />
+          </Rectangle>
+        </PartDraw>
+        <PartDraw x="296" y="184" width="5" height="4">
+          <Rectangle x="0" y="0" width="5" height="4">
+            <Fill color="#D97757" />
+          </Rectangle>
+        </PartDraw>
+        <PartDraw x="303" y="178" width="7" height="7">
+          <Rectangle x="0" y="0" width="7" height="7">
+            <Fill color="#D97757" />
+          </Rectangle>
+        </PartDraw>
+        <PartDraw x="335" y="171" width="38" height="59">
+          <Rectangle x="0" y="0" width="38" height="59">
+            <Fill color="#F3EADE" />
+          </Rectangle>
+        </PartDraw>
+        <PartDraw x="346" y="166" width="16" height="5">
+          <Rectangle x="0" y="0" width="16" height="5">
+            <Fill color="#F3EADE" />
+          </Rectangle>
+        </PartDraw>
+        <PartDraw x="339" y="175" width="30" height="51">
+          <Rectangle x="0" y="0" width="30" height="51">
+            <Fill color="#17110E" />
+          </Rectangle>
+        </PartDraw>
+        <PartDraw x="342" y="216" width="24" height="6">
+          <Rectangle x="0" y="0" width="24" height="6">
+            <Fill color="#34271E" />
+          </Rectangle>
+        </PartDraw>
+        <Condition>
+          <Expressions>
+            <Expression name="pack_0">[BATTERY_PERCENT] &gt;= 20</Expression>
+          </Expressions>
+          <Compare expression="pack_0">
+            <PartDraw x="342" y="216" width="24" height="6">
+              <Rectangle x="0" y="0" width="24" height="6">
+                <Fill color="#D97757" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <PartDraw x="342" y="207" width="24" height="6">
+          <Rectangle x="0" y="0" width="24" height="6">
+            <Fill color="#34271E" />
+          </Rectangle>
+        </PartDraw>
+        <Condition>
+          <Expressions>
+            <Expression name="pack_1">[BATTERY_PERCENT] &gt;= 40</Expression>
+          </Expressions>
+          <Compare expression="pack_1">
+            <PartDraw x="342" y="207" width="24" height="6">
+              <Rectangle x="0" y="0" width="24" height="6">
+                <Fill color="#D97757" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <PartDraw x="342" y="198" width="24" height="6">
+          <Rectangle x="0" y="0" width="24" height="6">
+            <Fill color="#34271E" />
+          </Rectangle>
+        </PartDraw>
+        <Condition>
+          <Expressions>
+            <Expression name="pack_2">[BATTERY_PERCENT] &gt;= 60</Expression>
+          </Expressions>
+          <Compare expression="pack_2">
+            <PartDraw x="342" y="198" width="24" height="6">
+              <Rectangle x="0" y="0" width="24" height="6">
+                <Fill color="#D97757" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <PartDraw x="342" y="189" width="24" height="6">
+          <Rectangle x="0" y="0" width="24" height="6">
+            <Fill color="#34271E" />
+          </Rectangle>
+        </PartDraw>
+        <Condition>
+          <Expressions>
+            <Expression name="pack_3">[BATTERY_PERCENT] &gt;= 80</Expression>
+          </Expressions>
+          <Compare expression="pack_3">
+            <PartDraw x="342" y="189" width="24" height="6">
+              <Rectangle x="0" y="0" width="24" height="6">
+                <Fill color="#D97757" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <PartDraw x="342" y="180" width="24" height="6">
+          <Rectangle x="0" y="0" width="24" height="6">
+            <Fill color="#34271E" />
+          </Rectangle>
+        </PartDraw>
+        <Condition>
+          <Expressions>
+            <Expression name="pack_4">[BATTERY_PERCENT] &gt;= 100</Expression>
+          </Expressions>
+          <Compare expression="pack_4">
+            <PartDraw x="342" y="180" width="24" height="6">
+              <Rectangle x="0" y="0" width="24" height="6">
+                <Fill color="#D97757" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="full_pack">[BATTERY_PERCENT] == 100</Expression>
+          </Expressions>
+          <Compare expression="full_pack">
+            <PartDraw x="344" y="194" width="5" height="5">
+              <Rectangle x="0" y="0" width="5" height="5">
+                <Fill color="#88C999" />
+              </Rectangle>
+            </PartDraw>
+            <PartDraw x="348" y="198" width="5" height="5">
+              <Rectangle x="0" y="0" width="5" height="5">
+                <Fill color="#88C999" />
+              </Rectangle>
+            </PartDraw>
+            <PartDraw x="352" y="194" width="5" height="5">
+              <Rectangle x="0" y="0" width="5" height="5">
+                <Fill color="#88C999" />
+              </Rectangle>
+            </PartDraw>
+            <PartDraw x="356" y="190" width="5" height="5">
+              <Rectangle x="0" y="0" width="5" height="5">
+                <Fill color="#88C999" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_word_0">[BATTERY_PERCENT] &lt; 100 &amp;&amp; ([SECONDS_IN_DAY] % 40) &gt;= 0 &amp;&amp; ([SECONDS_IN_DAY] % 40) &lt; 5</Expression>
+          </Expressions>
+          <Compare expression="charge_word_0">
+            <Condition>
+              <Expressions>
+                <Expression name="halfway">[BATTERY_PERCENT] &gt;= 50 &amp;&amp; [BATTERY_PERCENT] &lt; 55</Expression>
+              </Expressions>
+              <Compare expression="halfway">
+                <PartText x="45" y="245" width="360" height="32">
+                  <Text align="CENTER">
+                    <Font family="terminal_mono" size="18" color="#D97757">✳ Halfway caffeinated</Font>
+                  </Text>
+                </PartText>
+              </Compare>
+            </Condition>
+            <Condition>
+              <Expressions>
+                <Expression name="nearly">[BATTERY_PERCENT] &gt;= 90 &amp;&amp; [BATTERY_PERCENT] &lt; 95</Expression>
+              </Expressions>
+              <Compare expression="nearly">
+                <PartText x="45" y="245" width="360" height="32">
+                  <Text align="CENTER">
+                    <Font family="terminal_mono" size="18" color="#D97757">✳ Nearly enlightened</Font>
+                  </Text>
+                </PartText>
+              </Compare>
+            </Condition>
+            <Condition>
+              <Expressions>
+                <Expression name="ordinary">([BATTERY_PERCENT] &lt; 50 || [BATTERY_PERCENT] &gt;= 55) &amp;&amp; ([BATTERY_PERCENT] &lt; 90 || [BATTERY_PERCENT] &gt;= 95)</Expression>
+              </Expressions>
+              <Compare expression="ordinary">
+                <PartText x="35" y="245" width="380" height="32">
+                  <Text align="CENTER">
+                    <Font family="terminal_mono" size="18" color="#D97757">✳ Sipping watts…</Font>
+                  </Text>
+                </PartText>
+              </Compare>
+            </Condition>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_word_1">[BATTERY_PERCENT] &lt; 100 &amp;&amp; ([SECONDS_IN_DAY] % 40) &gt;= 5 &amp;&amp; ([SECONDS_IN_DAY] % 40) &lt; 10</Expression>
+          </Expressions>
+          <Compare expression="charge_word_1">
+            <PartText x="35" y="245" width="380" height="32">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="18" color="#D97757">✳ Rejuvenating…</Font>
+              </Text>
+            </PartText>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_word_2">[BATTERY_PERCENT] &lt; 100 &amp;&amp; ([SECONDS_IN_DAY] % 40) &gt;= 10 &amp;&amp; ([SECONDS_IN_DAY] % 40) &lt; 15</Expression>
+          </Expressions>
+          <Compare expression="charge_word_2">
+            <PartText x="35" y="245" width="380" height="32">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="18" color="#D97757">✳ Absorbing electrons…</Font>
+              </Text>
+            </PartText>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_word_3">[BATTERY_PERCENT] &lt; 100 &amp;&amp; ([SECONDS_IN_DAY] % 40) &gt;= 15 &amp;&amp; ([SECONDS_IN_DAY] % 40) &lt; 20</Expression>
+          </Expressions>
+          <Compare expression="charge_word_3">
+            <PartText x="35" y="245" width="380" height="32">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="18" color="#D97757">✳ Refuelling…</Font>
+              </Text>
+            </PartText>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_word_4">[BATTERY_PERCENT] &lt; 100 &amp;&amp; ([SECONDS_IN_DAY] % 40) &gt;= 20 &amp;&amp; ([SECONDS_IN_DAY] % 40) &lt; 25</Expression>
+          </Expressions>
+          <Compare expression="charge_word_4">
+            <PartText x="35" y="245" width="380" height="32">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="18" color="#D97757">✳ Power napping…</Font>
+              </Text>
+            </PartText>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_word_5">[BATTERY_PERCENT] &lt; 100 &amp;&amp; ([SECONDS_IN_DAY] % 40) &gt;= 25 &amp;&amp; ([SECONDS_IN_DAY] % 40) &lt; 30</Expression>
+          </Expressions>
+          <Compare expression="charge_word_5">
+            <PartText x="35" y="245" width="380" height="32">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="18" color="#D97757">✳ Gathering sparks…</Font>
+              </Text>
+            </PartText>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_word_6">[BATTERY_PERCENT] &lt; 100 &amp;&amp; ([SECONDS_IN_DAY] % 40) &gt;= 30 &amp;&amp; ([SECONDS_IN_DAY] % 40) &lt; 35</Expression>
+          </Expressions>
+          <Compare expression="charge_word_6">
+            <PartText x="35" y="245" width="380" height="32">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="18" color="#D97757">✳ Recharging neurons…</Font>
+              </Text>
+            </PartText>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_word_7">[BATTERY_PERCENT] &lt; 100 &amp;&amp; ([SECONDS_IN_DAY] % 40) &gt;= 35 &amp;&amp; ([SECONDS_IN_DAY] % 40) &lt; 40</Expression>
+          </Expressions>
+          <Compare expression="charge_word_7">
+            <PartText x="35" y="245" width="380" height="32">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="18" color="#D97757">✳ Almost sentient…</Font>
+              </Text>
+            </PartText>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="fully_charged">[BATTERY_PERCENT] == 100</Expression>
+          </Expressions>
+          <Compare expression="fully_charged">
+            <PartText x="25" y="245" width="400" height="32">
+              <Text align="CENTER">
+                <Font family="terminal_mono" size="16" color="#D97757">Fully charged. Still pondering.</Font>
+              </Text>
+            </PartText>
+          </Compare>
+        </Condition>
+        <PartText x="110" y="379" width="230" height="22">
+          <Text align="CENTER">
+            <Font family="terminal_mono" size="15" color="#D97757">
+              <Template>recharging %d%%<Parameter expression="[BATTERY_PERCENT]" />
+              </Template>
+            </Font>
+          </Text>
+        </PartText>
+        <PartDraw x="130" y="405" width="181" height="10">
+          <Rectangle x="0" y="0" width="181" height="10">
+            <Fill color="#34271E" />
+          </Rectangle>
+        </PartDraw>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_0">[BATTERY_PERCENT] &gt;= 5</Expression>
+          </Expressions>
+          <Compare expression="charge_0">
+            <PartDraw x="131" y="406" width="7" height="8">
+              <Rectangle x="0" y="0" width="7" height="8">
+                <Fill color="#D97757" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_1">[BATTERY_PERCENT] &gt;= 10</Expression>
+          </Expressions>
+          <Compare expression="charge_1">
+            <PartDraw x="140" y="406" width="7" height="8">
+              <Rectangle x="0" y="0" width="7" height="8">
+                <Fill color="#D97757" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_2">[BATTERY_PERCENT] &gt;= 15</Expression>
+          </Expressions>
+          <Compare expression="charge_2">
+            <PartDraw x="149" y="406" width="7" height="8">
+              <Rectangle x="0" y="0" width="7" height="8">
+                <Fill color="#D97757" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_3">[BATTERY_PERCENT] &gt;= 20</Expression>
+          </Expressions>
+          <Compare expression="charge_3">
+            <PartDraw x="158" y="406" width="7" height="8">
+              <Rectangle x="0" y="0" width="7" height="8">
+                <Fill color="#D97757" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_4">[BATTERY_PERCENT] &gt;= 25</Expression>
+          </Expressions>
+          <Compare expression="charge_4">
+            <PartDraw x="167" y="406" width="7" height="8">
+              <Rectangle x="0" y="0" width="7" height="8">
+                <Fill color="#D97757" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_5">[BATTERY_PERCENT] &gt;= 30</Expression>
+          </Expressions>
+          <Compare expression="charge_5">
+            <PartDraw x="176" y="406" width="7" height="8">
+              <Rectangle x="0" y="0" width="7" height="8">
+                <Fill color="#D97757" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_6">[BATTERY_PERCENT] &gt;= 35</Expression>
+          </Expressions>
+          <Compare expression="charge_6">
+            <PartDraw x="185" y="406" width="7" height="8">
+              <Rectangle x="0" y="0" width="7" height="8">
+                <Fill color="#D97757" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_7">[BATTERY_PERCENT] &gt;= 40</Expression>
+          </Expressions>
+          <Compare expression="charge_7">
+            <PartDraw x="194" y="406" width="7" height="8">
+              <Rectangle x="0" y="0" width="7" height="8">
+                <Fill color="#D97757" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_8">[BATTERY_PERCENT] &gt;= 45</Expression>
+          </Expressions>
+          <Compare expression="charge_8">
+            <PartDraw x="203" y="406" width="7" height="8">
+              <Rectangle x="0" y="0" width="7" height="8">
+                <Fill color="#D97757" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_9">[BATTERY_PERCENT] &gt;= 50</Expression>
+          </Expressions>
+          <Compare expression="charge_9">
+            <PartDraw x="212" y="406" width="7" height="8">
+              <Rectangle x="0" y="0" width="7" height="8">
+                <Fill color="#D97757" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_10">[BATTERY_PERCENT] &gt;= 55</Expression>
+          </Expressions>
+          <Compare expression="charge_10">
+            <PartDraw x="221" y="406" width="7" height="8">
+              <Rectangle x="0" y="0" width="7" height="8">
+                <Fill color="#D97757" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_11">[BATTERY_PERCENT] &gt;= 60</Expression>
+          </Expressions>
+          <Compare expression="charge_11">
+            <PartDraw x="230" y="406" width="7" height="8">
+              <Rectangle x="0" y="0" width="7" height="8">
+                <Fill color="#D97757" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_12">[BATTERY_PERCENT] &gt;= 65</Expression>
+          </Expressions>
+          <Compare expression="charge_12">
+            <PartDraw x="239" y="406" width="7" height="8">
+              <Rectangle x="0" y="0" width="7" height="8">
+                <Fill color="#D97757" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_13">[BATTERY_PERCENT] &gt;= 70</Expression>
+          </Expressions>
+          <Compare expression="charge_13">
+            <PartDraw x="248" y="406" width="7" height="8">
+              <Rectangle x="0" y="0" width="7" height="8">
+                <Fill color="#D97757" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_14">[BATTERY_PERCENT] &gt;= 75</Expression>
+          </Expressions>
+          <Compare expression="charge_14">
+            <PartDraw x="257" y="406" width="7" height="8">
+              <Rectangle x="0" y="0" width="7" height="8">
+                <Fill color="#D97757" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_15">[BATTERY_PERCENT] &gt;= 80</Expression>
+          </Expressions>
+          <Compare expression="charge_15">
+            <PartDraw x="266" y="406" width="7" height="8">
+              <Rectangle x="0" y="0" width="7" height="8">
+                <Fill color="#D97757" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_16">[BATTERY_PERCENT] &gt;= 85</Expression>
+          </Expressions>
+          <Compare expression="charge_16">
+            <PartDraw x="275" y="406" width="7" height="8">
+              <Rectangle x="0" y="0" width="7" height="8">
+                <Fill color="#D97757" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_17">[BATTERY_PERCENT] &gt;= 90</Expression>
+          </Expressions>
+          <Compare expression="charge_17">
+            <PartDraw x="284" y="406" width="7" height="8">
+              <Rectangle x="0" y="0" width="7" height="8">
+                <Fill color="#D97757" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_18">[BATTERY_PERCENT] &gt;= 95</Expression>
+          </Expressions>
+          <Compare expression="charge_18">
+            <PartDraw x="293" y="406" width="7" height="8">
+              <Rectangle x="0" y="0" width="7" height="8">
+                <Fill color="#D97757" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <Condition>
+          <Expressions>
+            <Expression name="charge_19">[BATTERY_PERCENT] &gt;= 100</Expression>
+          </Expressions>
+          <Compare expression="charge_19">
+            <PartDraw x="302" y="406" width="7" height="8">
+              <Rectangle x="0" y="0" width="7" height="8">
+                <Fill color="#D97757" />
+              </Rectangle>
+            </PartDraw>
+          </Compare>
+        </Condition>
+        <Group name="charging_motion" x="0" y="0" width="450" height="450">
+          <Variant mode="AMBIENT" target="alpha" value="0" />
+          <Condition>
+            <Expressions>
+              <Expression name="sleepy_blink">[SECOND] % 6 == 0 || [SECOND] % 6 == 1</Expression>
+            </Expressions>
+            <Compare expression="sleepy_blink">
+              <PartDraw x="183" y="160" width="15" height="29">
+                <Rectangle x="0" y="0" width="15" height="29">
+                  <Fill color="#D97757" />
+                </Rectangle>
+              </PartDraw>
+              <PartDraw x="183" y="176" width="13" height="4">
+                <Rectangle x="0" y="0" width="13" height="4">
+                  <Fill color="#000000" />
+                </Rectangle>
+              </PartDraw>
+              <PartDraw x="255" y="160" width="15" height="29">
+                <Rectangle x="0" y="0" width="15" height="29">
+                  <Fill color="#D97757" />
+                </Rectangle>
+              </PartDraw>
+              <PartDraw x="255" y="176" width="13" height="4">
+                <Rectangle x="0" y="0" width="13" height="4">
+                  <Fill color="#000000" />
+                </Rectangle>
+              </PartDraw>
+            </Compare>
+          </Condition>
+          <Condition>
+            <Expressions>
+              <Expression name="spark_0">[BATTERY_PERCENT] &lt; 100 &amp;&amp; [SECOND] % 5 == 0</Expression>
+            </Expressions>
+            <Compare expression="spark_0">
+              <PartDraw x="333" y="202" width="5" height="5">
+                <Rectangle x="0" y="0" width="5" height="5">
+                  <Fill color="#F3EADE" />
+                </Rectangle>
+              </PartDraw>
+            </Compare>
+          </Condition>
+          <Condition>
+            <Expressions>
+              <Expression name="spark_1">[BATTERY_PERCENT] &lt; 100 &amp;&amp; [SECOND] % 5 == 1</Expression>
+            </Expressions>
+            <Compare expression="spark_1">
+              <PartDraw x="323" y="205" width="5" height="5">
+                <Rectangle x="0" y="0" width="5" height="5">
+                  <Fill color="#F3EADE" />
+                </Rectangle>
+              </PartDraw>
+            </Compare>
+          </Condition>
+          <Condition>
+            <Expressions>
+              <Expression name="spark_2">[BATTERY_PERCENT] &lt; 100 &amp;&amp; [SECOND] % 5 == 2</Expression>
+            </Expressions>
+            <Compare expression="spark_2">
+              <PartDraw x="319" y="195" width="5" height="5">
+                <Rectangle x="0" y="0" width="5" height="5">
+                  <Fill color="#F3EADE" />
+                </Rectangle>
+              </PartDraw>
+            </Compare>
+          </Condition>
+          <Condition>
+            <Expressions>
+              <Expression name="spark_3">[BATTERY_PERCENT] &lt; 100 &amp;&amp; [SECOND] % 5 == 3</Expression>
+            </Expressions>
+            <Compare expression="spark_3">
+              <PartDraw x="319" y="183" width="5" height="5">
+                <Rectangle x="0" y="0" width="5" height="5">
+                  <Fill color="#F3EADE" />
+                </Rectangle>
+              </PartDraw>
+            </Compare>
+          </Condition>
+          <Condition>
+            <Expressions>
+              <Expression name="spark_4">[BATTERY_PERCENT] &lt; 100 &amp;&amp; [SECOND] % 5 == 4</Expression>
+            </Expressions>
+            <Compare expression="spark_4">
+              <PartDraw x="309" y="180" width="5" height="5">
+                <Rectangle x="0" y="0" width="5" height="5">
+                  <Fill color="#F3EADE" />
+                </Rectangle>
+              </PartDraw>
+            </Compare>
+          </Condition>
+        </Group>
+      </Compare>
+    </Condition>
   </Scene>
 </WatchFace>
