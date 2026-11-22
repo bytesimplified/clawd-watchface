@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dev.clawd.terminal.charged" android:versionCode="7" android:versionName="0.7.0">
+    <uses-sdk android:minSdkVersion="33" android:targetSdkVersion="35"/>
+    <uses-feature android:name="android.hardware.type.watch"/>
+    <application android:label="Clawd Charged" android:hasCode="false" android:allowBackup="false">
+        <meta-data android:name="com.google.android.wearable.standalone" android:value="true"/>
+        <property android:name="com.google.wear.watchface.format.version" android:value="1"/>
+    </application>
+</manifest>
