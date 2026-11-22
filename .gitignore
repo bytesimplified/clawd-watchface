@@ -1,0 +1,11 @@
+/build/
+/dist/
+/.signing/
+/.venv/
+__pycache__/
+*.pyc
+*.keystore
+*.jks
+*.apk
+*.idsig
+.env
